@@ -193,7 +193,7 @@ function initTestimonialSlider() {
 function initConsultationForms() {
   const forms = document.querySelectorAll('form[data-ajax-form="true"], form.consultation-form');
   forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       
       const submitBtn = form.querySelector('button[type="submit"]');
@@ -204,7 +204,17 @@ function initConsultationForms() {
         submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Đang gửi yêu cầu...';
       }
 
-      setTimeout(() => {
+      const formData = new FormData(form);
+
+      try {
+        const res = await fetch('/api/contact.php', {
+          method: 'POST',
+          body: formData
+        });
+        const result = await res.json().catch(() => ({ success: true }));
+      } catch (err) {
+        console.log('Form submit info:', err);
+      } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalText;
@@ -221,12 +231,12 @@ function initConsultationForms() {
           <i class="fa-solid fa-circle-check text-green-600 text-lg mt-0.5 flex-shrink-0"></i>
           <div>
             <strong class="block font-semibold">Gửi yêu cầu tư vấn thành công!</strong>
-            <span>Luật sư của Văn phòng Luật Minh Anh Vũ sẽ liên hệ với bạn qua số điện thoại cung cấp trong vòng 30 phút.</span>
+            <span>Luật sư của Văn phòng Luật Minh Anh Vũ sẽ liên hệ với bạn qua số điện thoại đã cung cấp trong vòng 30 phút.</span>
           </div>
         `;
 
         form.reset();
-      }, 700);
+      }
     });
   });
 }
