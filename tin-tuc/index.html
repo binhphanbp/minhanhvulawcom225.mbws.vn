@@ -56,6 +56,8 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
     }
     .font-accent {
       font-family: 'Dancing Script', cursive;
@@ -74,44 +76,44 @@
 
 
   <!-- Top Header with Logo, Company Name & Slogan (Khang Vu Style) -->
-  <header class="bg-white border-b border-slate-200 py-3">
+  <header class="bg-white border-b border-slate-200 py-3.5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
         <!-- Logo & Brand Info -->
         <a href="../" class="flex items-center gap-4 text-center md:text-left group">
-          <div class="bg-brand-red text-white w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center shadow-md shadow-red-600/20 flex-shrink-0 group-hover:scale-105 transition">
-            <i class="fa-solid fa-scale-balanced text-2xl sm:text-3xl"></i>
+          <div class="bg-brand-red text-white w-14 h-14 rounded-xl flex items-center justify-center shadow-md shadow-red-600/20 flex-shrink-0 group-hover:scale-105 transition">
+            <i class="fa-solid fa-scale-balanced text-3xl"></i>
           </div>
           <div>
-            <span class="block text-lg sm:text-xl font-bold tracking-tight text-navy-900 uppercase">CÔNG TY LUẬT TNHH MINH ANH VŨ</span>
-            <span class="block text-xs sm:text-sm font-medium text-brand-red tracking-normal mt-0.5">Điểm tựa niềm tin – Hiện thân công lý</span>
+            <span class="block text-xl sm:text-2xl font-bold tracking-tight text-navy-900 uppercase">CÔNG TY LUẬT TNHH MINH ANH VŨ</span>
+            <span class="block text-sm sm:text-base font-medium text-brand-red tracking-wide mt-0.5">Điểm tựa niềm tin – Hiện thân công lý</span>
           </div>
         </a>
 
         <!-- Right Quick Info -->
-        <div class="hidden lg:flex items-center gap-6">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-red-50 text-brand-red flex items-center justify-center text-base">
+        <div class="hidden lg:flex items-center gap-7">
+          <div class="flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-full bg-red-50 text-brand-red flex items-center justify-center text-lg shadow-sm">
               <i class="fa-solid fa-phone-volume"></i>
             </div>
             <div>
-              <span class="block text-[11px] text-slate-400 font-medium uppercase">Hotline 24/7</span>
-              <a href="tel:0901234567" class="text-sm font-semibold text-navy-900 hover:text-brand-red transition">0901.234.567</a>
+              <span class="block text-xs text-slate-500 font-medium uppercase tracking-wider">Hotline 24/7</span>
+              <a href="tel:0901234567" class="text-base font-bold text-navy-900 hover:text-brand-red transition">0901.234.567</a>
             </div>
           </div>
 
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-slate-100 text-navy-900 flex items-center justify-center text-base">
+          <div class="flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-full bg-slate-100 text-navy-900 flex items-center justify-center text-lg shadow-sm">
               <i class="fa-solid fa-clock"></i>
             </div>
             <div>
-              <span class="block text-[11px] text-slate-400 font-medium uppercase">Giờ làm việc</span>
-              <span class="text-sm font-semibold text-navy-900">08:00 - 17:30</span>
+              <span class="block text-xs text-slate-500 font-medium uppercase tracking-wider">Giờ làm việc</span>
+              <span class="text-base font-bold text-navy-900">08:00 - 17:30</span>
             </div>
           </div>
 
-          <a href="../lien-he/" class="px-5 py-2.5 bg-brand-red hover:bg-brand-redDark text-white font-semibold rounded-lg text-xs uppercase tracking-wider shadow-md shadow-red-600/25 transition">
-            <i class="fa-solid fa-calendar-check mr-1.5"></i> Đặt Lịch Hẹn
+          <a href="../lien-he/" class="px-6 py-3 bg-brand-red hover:bg-brand-redDark text-white font-semibold rounded-lg text-sm uppercase tracking-wider shadow-md shadow-red-600/25 transition">
+            <i class="fa-solid fa-calendar-check mr-2"></i> Đặt Lịch Hẹn
           </a>
         </div>
 
@@ -123,32 +125,32 @@
     </div>
   </header>
 
-  <!-- Main Navigation Bar (Deep Navy with Vertical Divider '|' & Multi-level Dropdowns) -->
+  <!-- Main Navigation Bar (Synchronized Font Size text-base / font-semibold) -->
   <nav class="sticky top-0 z-50 bg-navy-900 text-white shadow-xl hidden lg:block border-t border-navy-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <ul class="flex items-center justify-center space-x-1 text-sm uppercase tracking-wide py-1">
+      <ul class="flex items-center justify-center space-x-2 text-base uppercase tracking-wide py-1">
         
         <!-- 1. Trang chủ -->
         <li class="relative">
-          <a href="../" class="px-4 py-3.5 block text-white hover:text-brand-red font-medium transition">Trang chủ</a>
+          <a href="../" class="px-4 py-3.5 block text-white hover:text-brand-red font-semibold transition">Trang chủ</a>
         </li>
         <li class="text-slate-600 select-none">|</li>
 
         <!-- 2. Giới thiệu (Dropdown) -->
         <li class="relative nav-item-dropdown">
-          <a href="../gioi-thieu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-medium transition">
+          <a href="../gioi-thieu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-semibold transition">
             <span>Giới thiệu</span>
             <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
           </a>
-          <ul class="dropdown-menu hidden absolute top-full left-0 w-60 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-64 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-sm normal-case font-medium">
             <li>
-              <a href="../gioi-thieu/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Giới thiệu chung
+              <a href="../gioi-thieu/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Giới thiệu chung
               </a>
             </li>
             <li>
-              <a href="../luat-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Đội ngũ nhân sự / Luật sư
+              <a href="../luat-su/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Đội ngũ nhân sự / Luật sư
               </a>
             </li>
           </ul>
@@ -157,39 +159,39 @@
 
         <!-- 3. Lĩnh vực hoạt động (Dropdown 6 services) -->
         <li class="relative nav-item-dropdown">
-          <a href="../dich-vu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-medium transition">
+          <a href="../dich-vu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-semibold transition">
             <span>Lĩnh vực hoạt động</span>
             <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
           </a>
-          <ul class="dropdown-menu hidden absolute top-full left-0 w-64 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-72 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-sm normal-case font-medium">
             <li>
-              <a href="../luat-dan-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Dân sự
+              <a href="../luat-dan-su/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Luật sư Dân sự
               </a>
             </li>
             <li>
-              <a href="../luat-hinh-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hình sự
+              <a href="../luat-hinh-su/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Luật sư Hình sự
               </a>
             </li>
             <li>
-              <a href="../luat-nha-dat/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Nhà đất & Đất đai
+              <a href="../luat-nha-dat/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Luật sư Nhà đất & Đất đai
               </a>
             </li>
             <li>
-              <a href="../luat-hon-nhan-gia-dinh/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hôn nhân & Gia đình
+              <a href="../luat-hon-nhan-gia-dinh/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Luật sư Hôn nhân & Gia đình
               </a>
             </li>
             <li>
-              <a href="../luat-lao-dong/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Lao động
+              <a href="../luat-lao-dong/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Luật sư Lao động
               </a>
             </li>
             <li>
-              <a href="../luat-doanh-nghiep/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Doanh nghiệp
+              <a href="../luat-doanh-nghiep/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Luật sư Doanh nghiệp
               </a>
             </li>
           </ul>
@@ -202,20 +204,20 @@
             <span>Hỏi đáp - Pháp luật</span>
             <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
           </a>
-          <ul class="dropdown-menu hidden absolute top-full left-0 w-60 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-64 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-sm normal-case font-medium">
             <li>
-              <a href="../tin-tuc/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Tất cả Hỏi đáp & Án lệ
+              <a href="../tin-tuc/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Tất cả Hỏi đáp & Án lệ
               </a>
             </li>
             <li>
-              <a href="../tag/luat-gia-dinh/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Hôn nhân & Gia đình
+              <a href="../tag/luat-gia-dinh/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Hôn nhân & Gia đình
               </a>
             </li>
             <li>
-              <a href="../tag/luat-hinh-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Hình sự & Bào chữa
+              <a href="../tag/luat-hinh-su/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Hình sự & Bào chữa
               </a>
             </li>
           </ul>
@@ -224,19 +226,19 @@
 
         <!-- 5. Học tập - Nghiên cứu -->
         <li class="relative nav-item-dropdown">
-          <a href="../hoc-tap-nghien-cuu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-medium transition">
+          <a href="../hoc-tap-nghien-cuu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-semibold transition">
             <span>Học tập - Nghiên cứu</span>
             <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
           </a>
-          <ul class="dropdown-menu hidden absolute top-full left-0 w-60 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-64 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-sm normal-case font-medium">
             <li>
-              <a href="../hoc-tap-nghien-cuu/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Tài liệu nghiệp vụ luật sư
+              <a href="../hoc-tap-nghien-cuu/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Tài liệu nghiệp vụ luật sư
               </a>
             </li>
             <li>
-              <a href="../hoc-tap-nghien-cuu/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
-                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Tài liệu cử nhân luật
+              <a href="../hoc-tap-nghien-cuu/" class="block px-4 py-3 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-xs mr-2 text-brand-red"></i> Tài liệu cử nhân luật
               </a>
             </li>
           </ul>
@@ -245,7 +247,7 @@
 
         <!-- 6. Liên hệ -->
         <li class="relative">
-          <a href="../lien-he/" class="px-4 py-3.5 block text-white hover:text-brand-red font-medium transition">Liên hệ</a>
+          <a href="../lien-he/" class="px-4 py-3.5 block text-white hover:text-brand-red font-semibold transition">Liên hệ</a>
         </li>
 
       </ul>
@@ -262,42 +264,42 @@
             <div class="bg-brand-red text-white p-2 rounded-md">
               <i class="fa-solid fa-scale-balanced text-lg"></i>
             </div>
-            <span class="font-bold text-navy-900 tracking-wide">MINH ANH VŨ</span>
+            <span class="font-bold text-navy-900 tracking-wide text-base">MINH ANH VŨ</span>
           </div>
           <button id="close-drawer-btn" class="p-2 text-slate-500 hover:text-slate-900 rounded-md">
             <i class="fa-solid fa-xmark text-2xl"></i>
           </button>
         </div>
-        <ul class="mt-6 space-y-1 text-sm font-medium">
-          <li><a href="../" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Trang chủ</a></li>
+        <ul class="mt-6 space-y-1 text-base font-medium">
+          <li><a href="../" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-semibold">Trang chủ</a></li>
           <li>
             <a href="../gioi-thieu/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-bold text-navy-900">Giới thiệu</a>
-            <ul class="pl-4 space-y-1 text-xs text-slate-600">
-              <li><a href="../gioi-thieu/" class="block py-1.5 hover:text-brand-red">• Giới thiệu chung</a></li>
-              <li><a href="../luat-su/" class="block py-1.5 hover:text-brand-red">• Đội ngũ nhân sự</a></li>
+            <ul class="pl-4 space-y-1 text-sm text-slate-600">
+              <li><a href="../gioi-thieu/" class="block py-2 hover:text-brand-red">• Giới thiệu chung</a></li>
+              <li><a href="../luat-su/" class="block py-2 hover:text-brand-red">• Đội ngũ nhân sự</a></li>
             </ul>
           </li>
           <li>
             <a href="../dich-vu/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-bold text-navy-900">Lĩnh vực hoạt động</a>
-            <ul class="pl-4 space-y-1 text-xs text-slate-600">
-              <li><a href="../luat-dan-su/" class="block py-1.5 hover:text-brand-red">• Luật sư Dân sự</a></li>
-              <li><a href="../luat-hinh-su/" class="block py-1.5 hover:text-brand-red">• Luật sư Hình sự</a></li>
-              <li><a href="../luat-nha-dat/" class="block py-1.5 hover:text-brand-red">• Luật sư Nhà đất</a></li>
-              <li><a href="../luat-hon-nhan-gia-dinh/" class="block py-1.5 hover:text-brand-red">• Luật sư Hôn nhân & Gia đình</a></li>
-              <li><a href="../luat-lao-dong/" class="block py-1.5 hover:text-brand-red">• Luật sư Lao động</a></li>
-              <li><a href="../luat-doanh-nghiep/" class="block py-1.5 hover:text-brand-red">• Luật sư Doanh nghiệp</a></li>
+            <ul class="pl-4 space-y-1 text-sm text-slate-600">
+              <li><a href="../luat-dan-su/" class="block py-2 hover:text-brand-red">• Luật sư Dân sự</a></li>
+              <li><a href="../luat-hinh-su/" class="block py-2 hover:text-brand-red">• Luật sư Hình sự</a></li>
+              <li><a href="../luat-nha-dat/" class="block py-2 hover:text-brand-red">• Luật sư Nhà đất</a></li>
+              <li><a href="../luat-hon-nhan-gia-dinh/" class="block py-2 hover:text-brand-red">• Luật sư Hôn nhân & Gia đình</a></li>
+              <li><a href="../luat-lao-dong/" class="block py-2 hover:text-brand-red">• Luật sư Lao động</a></li>
+              <li><a href="../luat-doanh-nghiep/" class="block py-2 hover:text-brand-red">• Luật sư Doanh nghiệp</a></li>
             </ul>
           </li>
-          <li><a href="../tin-tuc/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Hỏi đáp - Pháp luật</a></li>
-          <li><a href="../hoc-tap-nghien-cuu/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Học tập - Nghiên cứu</a></li>
-          <li><a href="../lien-he/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Liên hệ</a></li>
+          <li><a href="../tin-tuc/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-semibold">Hỏi đáp - Pháp luật</a></li>
+          <li><a href="../hoc-tap-nghien-cuu/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-semibold">Học tập - Nghiên cứu</a></li>
+          <li><a href="../lien-he/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-semibold">Liên hệ</a></li>
         </ul>
       </div>
       <div class="pt-6 border-t border-slate-200 space-y-3">
-        <a href="tel:0901234567" class="flex items-center justify-center gap-2 w-full py-3 bg-red-50 text-brand-red font-bold rounded-lg border border-red-200 text-sm">
+        <a href="tel:0901234567" class="flex items-center justify-center gap-2 w-full py-3.5 bg-red-50 text-brand-red font-bold rounded-lg border border-red-200 text-base">
           <i class="fa-solid fa-phone"></i> 0901.234.567
         </a>
-        <a href="../lien-he/" class="block text-center w-full py-3 bg-brand-red hover:bg-brand-redDark text-white font-bold rounded-lg shadow-md text-sm">
+        <a href="../lien-he/" class="block text-center w-full py-3.5 bg-brand-red hover:bg-brand-redDark text-white font-bold rounded-lg shadow-md text-base">
           Đặt Lịch Tư Vấn
         </a>
       </div>
@@ -305,79 +307,79 @@
   </div>
 
 
-  <section class="relative bg-navy-950 py-16 text-white overflow-hidden border-b border-navy-800">
+  <section class="relative bg-navy-950 py-16 sm:py-20 text-white overflow-hidden border-b border-navy-800">
     <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('../assets/uploads/2024/10/anh-nen-chuyen-muc.jpg');"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-900/95 to-navy-950/90"></div>
     
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3.5">
       <h1 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">Hỏi đáp - Pháp luật</h1>
-      <div class="text-xs uppercase tracking-wider text-slate-300">
+      <div class="text-sm uppercase tracking-wider text-slate-300 font-medium">
         <a href="../" class="hover:text-brand-red">Trang chủ</a> <span class="mx-2 text-slate-500">/</span> <span class="text-brand-red font-semibold">Hỏi đáp - Pháp luật</span>
       </div>
     </div>
   </section>
 
-  <main class="py-16 bg-slate-50 flex-1">
+  <main class="py-16 sm:py-20 bg-slate-50 flex-1">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
         
         <div class="lg:col-span-8 space-y-8">
           <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col md:flex-row hover:shadow-lg transition">
-            <div class="md:w-5/12 overflow-hidden h-56 md:h-auto">
+            <div class="md:w-5/12 overflow-hidden h-60 md:h-auto">
               <img src="../assets/uploads/2024/10/chay-quan-karaoke.jpg" alt="Cháy quán karaoke" class="w-full h-full object-cover" />
             </div>
-            <div class="p-6 md:w-7/12 flex flex-col justify-between space-y-4">
+            <div class="p-7 md:w-7/12 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-xs font-semibold text-brand-red uppercase tracking-wider">Hỏi đáp • Hình sự</span>
-                <h3 class="text-lg font-bold text-navy-900 mt-1 hover:text-brand-red transition tracking-tight">
+                <span class="text-sm font-bold text-brand-red uppercase tracking-wider">Hỏi đáp • Hình sự</span>
+                <h3 class="text-lg sm:text-xl font-bold text-navy-900 mt-1 hover:text-brand-red transition tracking-tight">
                   <a href="../chay-quan-karaoke-chet-13-nguoi-trach-nhiem-thuoc-ve-ai/">Cháy quán karaoke chết 13 người: Trách nhiệm thuộc về ai?</a>
                 </h3>
-                <p class="text-xs text-slate-600 font-normal line-clamp-3 mt-2 leading-relaxed">
+                <p class="text-base text-slate-600 font-normal line-clamp-3 mt-2 leading-relaxed">
                   Phân tích trách nhiệm pháp lý theo quy định của Bộ luật Hình sự đối với chủ cơ sở kinh doanh, người quản lý và cơ quan chức năng khi xảy ra tai nạn hỏa hoạn nghiêm trọng.
                 </p>
               </div>
-              <a href="../chay-quan-karaoke-chet-13-nguoi-trach-nhiem-thuoc-ve-ai/" class="inline-flex items-center text-xs font-semibold text-brand-red hover:text-brand-redDark">
-                Đọc toàn bộ bài viết <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+              <a href="../chay-quan-karaoke-chet-13-nguoi-trach-nhiem-thuoc-ve-ai/" class="inline-flex items-center text-sm font-bold text-brand-red hover:text-brand-redDark">
+                Đọc toàn bộ bài viết <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
               </a>
             </div>
           </article>
 
           <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col md:flex-row hover:shadow-lg transition">
-            <div class="md:w-5/12 overflow-hidden h-56 md:h-auto">
+            <div class="md:w-5/12 overflow-hidden h-60 md:h-auto">
               <img src="../assets/uploads/2024/10/xu-phat_tung_tin.jpg" alt="Xử phạt tung tin" class="w-full h-full object-cover" />
             </div>
-            <div class="p-6 md:w-7/12 flex flex-col justify-between space-y-4">
+            <div class="p-7 md:w-7/12 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-xs font-semibold text-brand-red uppercase tracking-wider">Hỏi đáp • Mạng xã hội</span>
-                <h3 class="text-lg font-bold text-navy-900 mt-1 hover:text-brand-red transition tracking-tight">
+                <span class="text-sm font-bold text-brand-red uppercase tracking-wider">Hỏi đáp • Mạng xã hội</span>
+                <h3 class="text-lg sm:text-xl font-bold text-navy-900 mt-1 hover:text-brand-red transition tracking-tight">
                   <a href="../xu-phat-nguoi-quay-dang-clip-doan-xe-chu-tich-quoc-hoi/">Xử phạt người quay, đăng clip ‘đoàn xe Chủ tịch Quốc hội’</a>
                 </h3>
-                <p class="text-xs text-slate-600 font-normal line-clamp-3 mt-2 leading-relaxed">
+                <p class="text-base text-slate-600 font-normal line-clamp-3 mt-2 leading-relaxed">
                   Hành vi đăng tải thông tin sai sự thật trên không gian mạng có thể bị xử phạt hành chính từ 10 đến 20 triệu đồng hoặc xem xét truy cứu trách nhiệm hình sự.
                 </p>
               </div>
-              <a href="../xu-phat-nguoi-quay-dang-clip-doan-xe-chu-tich-quoc-hoi/" class="inline-flex items-center text-xs font-semibold text-brand-red hover:text-brand-redDark">
-                Đọc toàn bộ bài viết <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+              <a href="../xu-phat-nguoi-quay-dang-clip-doan-xe-chu-tich-quoc-hoi/" class="inline-flex items-center text-sm font-bold text-brand-red hover:text-brand-redDark">
+                Đọc toàn bộ bài viết <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
               </a>
             </div>
           </article>
 
           <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col md:flex-row hover:shadow-lg transition">
-            <div class="md:w-5/12 overflow-hidden h-56 md:h-auto">
+            <div class="md:w-5/12 overflow-hidden h-60 md:h-auto">
               <img src="../assets/uploads/2024/10/cong-an-bat-toi-pham.jpg" alt="Bắt tội phạm" class="w-full h-full object-cover" />
             </div>
-            <div class="p-6 md:w-7/12 flex flex-col justify-between space-y-4">
+            <div class="p-7 md:w-7/12 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-xs font-semibold text-brand-red uppercase tracking-wider">Hỏi đáp • Tố tụng</span>
-                <h3 class="text-lg font-bold text-navy-900 mt-1 hover:text-brand-red transition tracking-tight">
+                <span class="text-sm font-bold text-brand-red uppercase tracking-wider">Hỏi đáp • Tố tụng</span>
+                <h3 class="text-lg sm:text-xl font-bold text-navy-900 mt-1 hover:text-brand-red transition tracking-tight">
                   <a href="../chieu-bat-toi-pham-co-mot-khong-hai/">Chiêu’ bắt tội phạm ‘có một không hai</a>
                 </h3>
-                <p class="text-xs text-slate-600 font-normal line-clamp-3 mt-2 leading-relaxed">
+                <p class="text-base text-slate-600 font-normal line-clamp-3 mt-2 leading-relaxed">
                   Phân tích những vụ án hình sự đặc thù và các biện pháp nghiệp vụ thu thập chứng cứ hợp pháp của cơ quan điều tra trong quá trình phá án.
                 </p>
               </div>
-              <a href="../chieu-bat-toi-pham-co-mot-khong-hai/" class="inline-flex items-center text-xs font-semibold text-brand-red hover:text-brand-redDark">
-                Đọc toàn bộ bài viết <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+              <a href="../chieu-bat-toi-pham-co-mot-khong-hai/" class="inline-flex items-center text-sm font-bold text-brand-red hover:text-brand-redDark">
+                Đọc toàn bộ bài viết <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
               </a>
             </div>
           </article>
@@ -387,67 +389,67 @@
           
     <div class="space-y-8">
       <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
-        <h3 class="text-base font-bold uppercase text-navy-900 border-l-4 border-brand-red pl-3 mb-4">Tìm Kiếm Bài Viết</h3>
+        <h3 class="text-lg font-bold uppercase text-navy-900 border-l-4 border-brand-red pl-3 mb-5">Tìm Kiếm Bài Viết</h3>
         <form action="../tin-tuc/" method="get" class="flex gap-2">
-          <input type="text" name="s" placeholder="Nhập từ khóa tìm kiếm..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs focus:ring-1 focus:ring-brand-red focus:border-brand-red outline-none" />
-          <button type="submit" class="px-4 py-2.5 bg-brand-red hover:bg-brand-redDark text-white rounded-lg text-xs font-bold transition">
+          <input type="text" name="s" placeholder="Nhập từ khóa tìm kiếm..." class="w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:ring-1 focus:ring-brand-red focus:border-brand-red outline-none" />
+          <button type="submit" class="px-5 py-3 bg-brand-red hover:bg-brand-redDark text-white rounded-lg text-sm font-bold transition">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
 
       <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
-        <h3 class="text-base font-bold uppercase text-navy-900 border-l-4 border-brand-red pl-3 mb-4">Chuyên Mục Hỏi Đáp</h3>
-        <ul class="space-y-2 text-sm">
+        <h3 class="text-lg font-bold uppercase text-navy-900 border-l-4 border-brand-red pl-3 mb-5">Chuyên Mục Hỏi Đáp</h3>
+        <ul class="space-y-2.5 text-base">
           <li>
-            <a href="../dich-vu/" class="flex justify-between items-center text-slate-700 hover:text-brand-red py-1.5 border-b border-slate-100 font-medium">
+            <a href="../dich-vu/" class="flex justify-between items-center text-slate-700 hover:text-brand-red py-2 border-b border-slate-100 font-medium">
               <span>Lĩnh vực Hoạt động</span>
-              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600 font-semibold">6</span>
+              <span class="text-xs bg-slate-100 px-2.5 py-1 rounded-full text-slate-600 font-semibold">6</span>
             </a>
           </li>
           <li>
-            <a href="../tin-tuc/" class="flex justify-between items-center text-slate-700 hover:text-brand-red py-1.5 border-b border-slate-100 font-medium">
+            <a href="../tin-tuc/" class="flex justify-between items-center text-slate-700 hover:text-brand-red py-2 border-b border-slate-100 font-medium">
               <span>Hỏi đáp - Pháp luật</span>
-              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600 font-semibold">3</span>
+              <span class="text-xs bg-slate-100 px-2.5 py-1 rounded-full text-slate-600 font-semibold">3</span>
             </a>
           </li>
           <li>
-            <a href="../hoc-tap-nghien-cuu/" class="flex justify-between items-center text-slate-700 hover:text-brand-red py-1.5 border-b border-slate-100 font-medium">
+            <a href="../hoc-tap-nghien-cuu/" class="flex justify-between items-center text-slate-700 hover:text-brand-red py-2 border-b border-slate-100 font-medium">
               <span>Học tập & Nghiên cứu</span>
-              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600 font-semibold">2</span>
+              <span class="text-xs bg-slate-100 px-2.5 py-1 rounded-full text-slate-600 font-semibold">2</span>
             </a>
           </li>
         </ul>
       </div>
 
       <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
-        <h3 class="text-base font-bold uppercase text-navy-900 border-l-4 border-brand-red pl-3 mb-4">Bài Viết Mới Nhất</h3>
+        <h3 class="text-lg font-bold uppercase text-navy-900 border-l-4 border-brand-red pl-3 mb-5">Bài Viết Mới Nhất</h3>
         <div class="space-y-4">
-          <div class="flex gap-3 items-center">
-            <img src="../assets/uploads/2024/10/chay-quan-karaoke.jpg" alt="Post 1" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" />
+          <div class="flex gap-3.5 items-center">
+            <img src="../assets/uploads/2024/10/chay-quan-karaoke.jpg" alt="Post 1" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" />
             <div>
-              <h4 class="text-xs font-bold text-navy-900 hover:text-brand-red transition line-clamp-2">
+              <h4 class="text-sm sm:text-base font-bold text-navy-900 hover:text-brand-red transition line-clamp-2 leading-snug">
                 <a href="../chay-quan-karaoke-chet-13-nguoi-trach-nhiem-thuoc-ve-ai/">Cháy quán karaoke chết 13 người: Trách nhiệm thuộc về ai?</a>
               </h4>
-              <span class="text-[11px] text-slate-400 mt-1 block">28/10/2024</span>
+              <span class="text-xs text-slate-400 mt-1 block font-medium">28/10/2024</span>
             </div>
           </div>
-          <div class="flex gap-3 items-center">
-            <img src="../assets/uploads/2024/10/xu-phat_tung_tin.jpg" alt="Post 2" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" />
+          <div class="flex gap-3.5 items-center">
+            <img src="../assets/uploads/2024/10/xu-phat_tung_tin.jpg" alt="Post 2" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" />
             <div>
-              <h4 class="text-xs font-bold text-navy-900 hover:text-brand-red transition line-clamp-2">
+              <h4 class="text-sm sm:text-base font-bold text-navy-900 hover:text-brand-red transition line-clamp-2 leading-snug">
                 <a href="../xu-phat-nguoi-quay-dang-clip-doan-xe-chu-tich-quoc-hoi/">Xử phạt người quay, đăng clip ‘đoàn xe Chủ tịch Quốc hội’</a>
               </h4>
-              <span class="text-[11px] text-slate-400 mt-1 block">28/10/2024</span>
+              <span class="text-xs text-slate-400 mt-1 block font-medium">28/10/2024</span>
             </div>
           </div>
-          <div class="flex gap-3 items-center">
-            <img src="../assets/uploads/2024/10/cong-an-bat-toi-pham.jpg" alt="Post 3" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" />
+          <div class="flex gap-3.5 items-center">
+            <img src="../assets/uploads/2024/10/cong-an-bat-toi-pham.jpg" alt="Post 3" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" />
             <div>
-              <h4 class="text-xs font-bold text-navy-900 hover:text-brand-red transition line-clamp-2">
+              <h4 class="text-sm sm:text-base font-bold text-navy-900 hover:text-brand-red transition line-clamp-2 leading-snug">
                 <a href="../chieu-bat-toi-pham-co-mot-khong-hai/">Chiêu’ bắt tội phạm ‘có một không hai</a>
               </h4>
-              <span class="text-[11px] text-slate-400 mt-1 block">28/10/2024</span>
+              <span class="text-xs text-slate-400 mt-1 block font-medium">28/10/2024</span>
             </div>
           </div>
         </div>
@@ -460,76 +462,76 @@
     </div>
   </main>
 
-  <!-- Footer Section (4 Columns Structure Matching Khang Vu) -->
+  <!-- Footer Section (Standardized Typography text-sm to text-base) -->
   <footer class="bg-navy-950 text-slate-300 mt-auto border-t border-navy-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         
         <!-- Col 1: Legal Entity Info -->
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <div class="bg-brand-red text-white p-2 rounded-lg">
-              <i class="fa-solid fa-scale-balanced text-xl"></i>
+            <div class="bg-brand-red text-white p-2.5 rounded-lg shadow">
+              <i class="fa-solid fa-scale-balanced text-2xl"></i>
             </div>
-            <span class="text-lg font-bold tracking-wider text-white uppercase">MINH ANH VŨ</span>
+            <span class="text-xl font-bold tracking-wider text-white uppercase">MINH ANH VŨ</span>
           </div>
-          <div class="text-xs text-slate-400 space-y-2 leading-relaxed">
-            <p><strong class="text-white">CÔNG TY LUẬT TNHH MINH ANH VŨ</strong></p>
-            <p>Giấy ĐKHĐ số: <strong class="text-slate-300">79.2026.02.5342/TP/ĐKHĐ</strong> do Sở Tư pháp TP.HCM cấp.</p>
-            <p class="font-accent text-base text-brand-red">"Điểm tựa niềm tin – Hiện thân công lý"</p>
+          <div class="text-sm text-slate-400 space-y-2.5 leading-relaxed">
+            <p><strong class="text-white text-base">CÔNG TY LUẬT TNHH MINH ANH VŨ</strong></p>
+            <p>Giấy ĐKHĐ số: <strong class="text-slate-200">79.2026.02.5342/TP/ĐKHĐ</strong> do Sở Tư pháp TP.HCM cấp.</p>
+            <p class="font-accent text-lg text-brand-red font-semibold">"Điểm tựa niềm tin – Hiện thân công lý"</p>
           </div>
           <div class="flex space-x-3 pt-2">
-            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-facebook-f text-sm"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-youtube text-sm"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-tiktok text-sm"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800 text-sm"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800 text-sm"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800 text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800 text-sm"><i class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
 
         <!-- Col 2: Practice Areas Links -->
         <div>
-          <h3 class="text-white font-bold text-base uppercase tracking-wider mb-4 border-l-4 border-brand-red pl-3">Lĩnh vực hoạt động</h3>
-          <ul class="space-y-2 text-xs">
-            <li><a href="../luat-dan-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Dân sự</a></li>
-            <li><a href="../luat-hinh-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hình sự</a></li>
-            <li><a href="../luat-nha-dat/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Nhà đất</a></li>
-            <li><a href="../luat-hon-nhan-gia-dinh/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hôn nhân & Gia đình</a></li>
-            <li><a href="../luat-lao-dong/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Lao động</a></li>
-            <li><a href="../luat-doanh-nghiep/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Doanh nghiệp</a></li>
+          <h3 class="text-white font-bold text-base sm:text-lg uppercase tracking-wider mb-5 border-l-4 border-brand-red pl-3">Lĩnh vực hoạt động</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../luat-dan-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2.5 text-brand-red"></i> Luật sư Dân sự</a></li>
+            <li><a href="../luat-hinh-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2.5 text-brand-red"></i> Luật sư Hình sự</a></li>
+            <li><a href="../luat-nha-dat/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2.5 text-brand-red"></i> Luật sư Nhà đất</a></li>
+            <li><a href="../luat-hon-nhan-gia-dinh/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2.5 text-brand-red"></i> Luật sư Hôn nhân & Gia đình</a></li>
+            <li><a href="../luat-lao-dong/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2.5 text-brand-red"></i> Luật sư Lao động</a></li>
+            <li><a href="../luat-doanh-nghiep/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2.5 text-brand-red"></i> Luật sư Doanh nghiệp</a></li>
           </ul>
         </div>
 
         <!-- Col 3: Quick Navigation -->
         <div>
-          <h3 class="text-white font-bold text-base uppercase tracking-wider mb-4 border-l-4 border-brand-red pl-3">Hỏi đáp & Nghiên cứu</h3>
-          <ul class="space-y-2 text-xs">
-            <li><a href="../gioi-thieu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Giới thiệu chung</a></li>
-            <li><a href="../luat-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Đội ngũ Luật sư</a></li>
-            <li><a href="../tin-tuc/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Hỏi đáp - Pháp luật</a></li>
-            <li><a href="../hoc-tap-nghien-cuu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Tài liệu nghiệp vụ luật sư</a></li>
-            <li><a href="../hoc-tap-nghien-cuu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Tài liệu cử nhân luật</a></li>
-            <li><a href="../lien-he/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Liên hệ tư vấn</a></li>
+          <h3 class="text-white font-bold text-base sm:text-lg uppercase tracking-wider mb-5 border-l-4 border-brand-red pl-3">Hỏi đáp & Nghiên cứu</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../gioi-thieu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2.5 text-slate-500"></i> Giới thiệu chung</a></li>
+            <li><a href="../luat-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2.5 text-slate-500"></i> Đội ngũ Luật sư</a></li>
+            <li><a href="../tin-tuc/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2.5 text-slate-500"></i> Hỏi đáp - Pháp luật</a></li>
+            <li><a href="../hoc-tap-nghien-cuu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2.5 text-slate-500"></i> Tài liệu nghiệp vụ luật sư</a></li>
+            <li><a href="../hoc-tap-nghien-cuu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2.5 text-slate-500"></i> Tài liệu cử nhân luật</a></li>
+            <li><a href="../lien-he/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2.5 text-slate-500"></i> Liên hệ tư vấn</a></li>
           </ul>
         </div>
 
         <!-- Col 4: Contact info & Headquarters -->
         <div>
-          <h3 class="text-white font-bold text-base uppercase tracking-wider mb-4 border-l-4 border-brand-red pl-3">Trụ sở chính</h3>
-          <ul class="space-y-2.5 text-xs">
+          <h3 class="text-white font-bold text-base sm:text-lg uppercase tracking-wider mb-5 border-l-4 border-brand-red pl-3">Trụ sở chính</h3>
+          <ul class="space-y-3 text-sm">
             <li class="flex items-start">
-              <i class="fa-solid fa-location-dot text-brand-red mt-0.5 mr-2.5 flex-shrink-0"></i>
+              <i class="fa-solid fa-location-dot text-brand-red mt-1 mr-3 flex-shrink-0 text-base"></i>
               <span>Tầng 3, Tòa nhà Innovation, CVPM Quang Trung, P. Tân Chánh Hiệp, Quận 12, TP.HCM</span>
             </li>
             <li class="flex items-center">
-              <i class="fa-solid fa-phone text-brand-red mr-2.5 flex-shrink-0"></i>
+              <i class="fa-solid fa-phone text-brand-red mr-3 flex-shrink-0 text-base"></i>
               <span>Tel: <a href="tel:02873007788" class="text-slate-300 hover:text-white">028.7300.7788</a> - Hotline: <a href="tel:0901234567" class="text-brand-red font-bold">0901.234.567</a></span>
             </li>
             <li class="flex items-center">
-              <i class="fa-solid fa-envelope text-brand-red mr-2.5 flex-shrink-0"></i>
+              <i class="fa-solid fa-envelope text-brand-red mr-3 flex-shrink-0 text-base"></i>
               <span>contact@minhanhvulaw.com</span>
             </li>
             <li class="flex items-center">
-              <i class="fa-solid fa-globe text-brand-red mr-2.5 flex-shrink-0"></i>
+              <i class="fa-solid fa-globe text-brand-red mr-3 flex-shrink-0 text-base"></i>
               <span>www.minhanhvulaw.com</span>
             </li>
           </ul>
@@ -537,7 +539,7 @@
       </div>
 
       <!-- Copyright Bottom -->
-      <div class="mt-12 pt-8 border-t border-navy-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
+      <div class="mt-14 pt-8 border-t border-navy-800 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-400 gap-4">
         <p>© 2026 CÔNG TY LUẬT TNHH MINH ANH VŨ. Điểm tựa niềm tin – Hiện thân công lý.</p>
         <p class="flex items-center gap-1">Thiết kế & Vận hành bởi <span class="text-brand-red font-semibold">Mắt Bão WS</span></p>
       </div>
@@ -546,11 +548,11 @@
 
   <!-- Floating Call & Back To Top -->
   <div class="fixed bottom-6 right-6 z-40 flex flex-col items-center gap-3">
-    <a href="tel:0901234567" class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shadow-lg hover:bg-brand-redDark hover:scale-110 transition duration-300 animate-bounce" title="Gọi ngay cho Luật sư">
-      <i class="fa-solid fa-phone text-lg"></i>
+    <a href="tel:0901234567" class="w-13 h-13 p-3.5 rounded-full bg-brand-red text-white flex items-center justify-center shadow-xl hover:bg-brand-redDark hover:scale-110 transition duration-300 animate-bounce" title="Gọi ngay cho Luật sư">
+      <i class="fa-solid fa-phone text-xl"></i>
     </a>
-    <button id="back-to-top" class="w-11 h-11 rounded-full bg-navy-900 border border-navy-800 text-white opacity-0 pointer-events-none hover:bg-brand-red hover:border-brand-red flex items-center justify-center shadow-md transition duration-300" title="Về đầu trang">
-      <i class="fa-solid fa-arrow-up text-sm"></i>
+    <button id="back-to-top" class="w-12 h-12 rounded-full bg-navy-900 border border-navy-800 text-white opacity-0 pointer-events-none hover:bg-brand-red hover:border-brand-red flex items-center justify-center shadow-lg transition duration-300" title="Về đầu trang">
+      <i class="fa-solid fa-arrow-up text-base"></i>
     </button>
   </div>
 
