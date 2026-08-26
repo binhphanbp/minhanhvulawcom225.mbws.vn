@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ - CÔNG TY LUẬT VIỆT NAM | MINH ANH VŨ</title>
+  <meta name="description" content="Công ty Luật TNHH Minh Anh Vũ - Luật sư giỏi tư vấn và tranh tụng uy tín hàng đầu tại TP.HCM và cả nước." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="./assets/uploads/2024/10/cropped-favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="./assets/uploads/2024/10/cropped-favicon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="./assets/uploads/2024/10/cropped-favicon-180x180.png" />
+
+  <!-- Google Fonts: Roboto & Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50: '#f0f4f8',
+              100: '#d9e2ec',
+              200: '#bcccdc',
+              300: '#9fb3c8',
+              400: '#627d98',
+              500: '#486581',
+              600: '#334e68',
+              700: '#243b53',
+              800: '#102a43',
+              900: '#0b1a30',   /* Deep Charcoal Navy (Maison Law style) */
+              950: '#06101e',   /* Deepest Navy */
+            },
+            brand: {
+              red: '#dc2626',   /* Accent Red */
+              redDark: '#b91c1c',
+              gold: '#c59b27',
+              goldLight: '#e5be53'
+            }
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+            accent: ['Dancing Script', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .font-accent {
+      font-family: 'Dancing Script', cursive;
+    }
+    .glass-navy {
+      background-color: rgba(11, 26, 48, 0.98);
+      backdrop-filter: blur(10px);
+    }
+    /* Dropdown Hover styling */
+    .nav-item-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-700 antialiased flex flex-col min-h-screen">
+
+
+  <!-- Top Header with Logo, Company Name & Slogan (Khang Vu Style) -->
+  <header class="bg-white border-b border-slate-200 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <!-- Logo & Brand Info -->
+        <a href="./" class="flex items-center gap-4 text-center md:text-left">
+          <div class="bg-brand-red text-white w-14 h-14 rounded-xl flex items-center justify-center shadow-lg shadow-red-600/25 flex-shrink-0">
+            <i class="fa-solid fa-scale-balanced text-3xl"></i>
+          </div>
+          <div>
+            <span class="block text-xl sm:text-2xl font-black tracking-wider text-navy-900 uppercase">CÔNG TY LUẬT TNHH MINH ANH VŨ</span>
+            <span class="block text-xs sm:text-sm font-semibold text-brand-red tracking-wide uppercase mt-0.5">Điểm tựa niềm tin – Hiện thân công lý</span>
+          </div>
+        </a>
+
+        <!-- Right Quick Info -->
+        <div class="hidden lg:flex items-center gap-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-red-50 text-brand-red flex items-center justify-center text-lg">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div>
+              <span class="block text-xs text-slate-400 font-semibold uppercase">Hotline 24/7</span>
+              <a href="tel:0901234567" class="text-sm font-bold text-navy-900 hover:text-brand-red">0901.234.567</a>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-100 text-navy-900 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+              <span class="block text-xs text-slate-400 font-semibold uppercase">Giờ làm việc</span>
+              <span class="text-sm font-bold text-navy-900">08:00 - 17:30</span>
+            </div>
+          </div>
+
+          <a href="./lien-he/" class="px-5 py-2.5 bg-brand-red hover:bg-brand-redDark text-white font-bold rounded-lg text-xs uppercase tracking-wider shadow-md shadow-red-600/30 transition">
+            <i class="fa-solid fa-calendar-check mr-1.5"></i> Đặt Lịch Hẹn
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-lg text-navy-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar (Deep Navy with Vertical Divider '|' & Multi-level Dropdowns) -->
+  <nav class="sticky top-0 z-50 bg-navy-900 text-white shadow-xl hidden lg:block border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ul class="flex items-center justify-center space-x-1 text-sm uppercase tracking-wide py-1">
+        
+        <!-- 1. Trang chủ -->
+        <li class="relative">
+          <a href="./" class="px-4 py-3.5 block text-brand-red font-bold">Trang chủ</a>
+        </li>
+        <li class="text-slate-600 select-none">|</li>
+
+        <!-- 2. Giới thiệu (Dropdown) -->
+        <li class="relative nav-item-dropdown">
+          <a href="./gioi-thieu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-medium transition">
+            <span>Giới thiệu</span>
+            <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
+          </a>
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-60 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+            <li>
+              <a href="./gioi-thieu/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Giới thiệu chung
+              </a>
+            </li>
+            <li>
+              <a href="./luat-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Đội ngũ nhân sự / Luật sư
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="text-slate-600 select-none">|</li>
+
+        <!-- 3. Lĩnh vực hoạt động (Dropdown 6 services) -->
+        <li class="relative nav-item-dropdown">
+          <a href="./dich-vu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-medium transition">
+            <span>Lĩnh vực hoạt động</span>
+            <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
+          </a>
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-64 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+            <li>
+              <a href="./luat-dan-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Dân sự
+              </a>
+            </li>
+            <li>
+              <a href="./luat-hinh-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hình sự
+              </a>
+            </li>
+            <li>
+              <a href="./luat-nha-dat/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Nhà đất & Đất đai
+              </a>
+            </li>
+            <li>
+              <a href="./luat-hon-nhan-gia-dinh/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hôn nhân & Gia đình
+              </a>
+            </li>
+            <li>
+              <a href="./luat-lao-dong/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Lao động
+              </a>
+            </li>
+            <li>
+              <a href="./luat-doanh-nghiep/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Doanh nghiệp
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="text-slate-600 select-none">|</li>
+
+        <!-- 4. Hỏi đáp - Pháp luật (Dropdown) -->
+        <li class="relative nav-item-dropdown">
+          <a href="./tin-tuc/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-medium transition">
+            <span>Hỏi đáp - Pháp luật</span>
+            <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
+          </a>
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-60 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+            <li>
+              <a href="./tin-tuc/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Tất cả Hỏi đáp & Án lệ
+              </a>
+            </li>
+            <li>
+              <a href="./tag/luat-gia-dinh/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Hôn nhân & Gia đình
+              </a>
+            </li>
+            <li>
+              <a href="./tag/luat-hinh-su/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Hình sự & Bào chữa
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="text-slate-600 select-none">|</li>
+
+        <!-- 5. Học tập - Nghiên cứu -->
+        <li class="relative nav-item-dropdown">
+          <a href="./hoc-tap-nghien-cuu/" class="px-4 py-3.5 flex items-center gap-1.5 text-white hover:text-brand-red font-medium transition">
+            <span>Học tập - Nghiên cứu</span>
+            <i class="fa-solid fa-angle-down text-xs opacity-75"></i>
+          </a>
+          <ul class="dropdown-menu hidden absolute top-full left-0 w-60 bg-navy-950 border-t-2 border-brand-red shadow-2xl py-2 z-50 text-xs normal-case font-medium">
+            <li>
+              <a href="./hoc-tap-nghien-cuu/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200 border-b border-navy-900">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Tài liệu nghiệp vụ luật sư
+              </a>
+            </li>
+            <li>
+              <a href="./hoc-tap-nghien-cuu/" class="block px-4 py-2.5 text-slate-200 hover:bg-navy-900 hover:text-brand-red hover:pl-6 transition-all duration-200">
+                <i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Tài liệu cử nhân luật
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="text-slate-600 select-none">|</li>
+
+        <!-- 6. Liên hệ -->
+        <li class="relative">
+          <a href="./lien-he/" class="px-4 py-3.5 block text-white hover:text-brand-red font-medium transition">Liên hệ</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 hidden transition-opacity duration-300">
+    <div id="drawer-backdrop" class="fixed inset-0 bg-navy-950/80 backdrop-blur-sm"></div>
+    <div class="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-2xl p-6 flex flex-col justify-between z-10 overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-5 border-b border-slate-200">
+          <div class="flex items-center gap-2">
+            <div class="bg-brand-red text-white p-2 rounded-md">
+              <i class="fa-solid fa-scale-balanced text-lg"></i>
+            </div>
+            <span class="font-bold text-navy-900 tracking-wide">MINH ANH VŨ</span>
+          </div>
+          <button id="close-drawer-btn" class="p-2 text-slate-500 hover:text-slate-900 rounded-md">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+          </button>
+        </div>
+        <ul class="mt-6 space-y-1 text-sm font-medium">
+          <li><a href="./" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Trang chủ</a></li>
+          <li>
+            <a href="./gioi-thieu/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-bold text-navy-900">Giới thiệu</a>
+            <ul class="pl-4 space-y-1 text-xs text-slate-600">
+              <li><a href="./gioi-thieu/" class="block py-1.5 hover:text-brand-red">• Giới thiệu chung</a></li>
+              <li><a href="./luat-su/" class="block py-1.5 hover:text-brand-red">• Đội ngũ nhân sự</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./dich-vu/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100 font-bold text-navy-900">Lĩnh vực hoạt động</a>
+            <ul class="pl-4 space-y-1 text-xs text-slate-600">
+              <li><a href="./luat-dan-su/" class="block py-1.5 hover:text-brand-red">• Luật sư Dân sự</a></li>
+              <li><a href="./luat-hinh-su/" class="block py-1.5 hover:text-brand-red">• Luật sư Hình sự</a></li>
+              <li><a href="./luat-nha-dat/" class="block py-1.5 hover:text-brand-red">• Luật sư Nhà đất</a></li>
+              <li><a href="./luat-hon-nhan-gia-dinh/" class="block py-1.5 hover:text-brand-red">• Luật sư Hôn nhân & Gia đình</a></li>
+              <li><a href="./luat-lao-dong/" class="block py-1.5 hover:text-brand-red">• Luật sư Lao động</a></li>
+              <li><a href="./luat-doanh-nghiep/" class="block py-1.5 hover:text-brand-red">• Luật sư Doanh nghiệp</a></li>
+            </ul>
+          </li>
+          <li><a href="./tin-tuc/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Hỏi đáp - Pháp luật</a></li>
+          <li><a href="./hoc-tap-nghien-cuu/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Học tập - Nghiên cứu</a></li>
+          <li><a href="./lien-he/" class="block px-4 py-3 rounded-lg text-slate-800 hover:bg-slate-100">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="pt-6 border-t border-slate-200 space-y-3">
+        <a href="tel:0901234567" class="flex items-center justify-center gap-2 w-full py-3 bg-red-50 text-brand-red font-bold rounded-lg border border-red-200 text-sm">
+          <i class="fa-solid fa-phone"></i> 0901.234.567
+        </a>
+        <a href="./lien-he/" class="block text-center w-full py-3 bg-brand-red hover:bg-brand-redDark text-white font-bold rounded-lg shadow-md text-sm">
+          Đặt Lịch Tư Vấn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Carousel Section (6 Practice Areas with Bottom-Left Gradient Card) -->
+  <section class="relative bg-navy-950 text-white overflow-hidden" id="hero-slider">
+    <div class="relative min-h-[500px] sm:min-h-[560px] lg:min-h-[620px] flex items-end">
+      
+      <!-- Slide 1: Luật sư Hôn nhân gia đình -->
+      <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100 z-10 flex items-end">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/uploads/2024/10/anh-gioi-thieu-01.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 w-full">
+          <div class="max-w-xl bg-white/95 backdrop-blur-md rounded-xl p-6 sm:p-8 shadow-2xl text-navy-900 border-l-4 border-brand-red space-y-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Lĩnh vực trọng tâm</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-navy-900 leading-tight">LUẬT SƯ HÔN NHÂN GIA ĐÌNH</h2>
+            <p class="text-slate-600 text-sm font-medium leading-relaxed">
+              Đồng hành pháp lý – Bảo vệ quyền lợi – Giữ gìn hạnh phúc gia đình và tương lai con cái.
+            </p>
+            <div class="pt-2">
+              <a href="./luat-hon-nhan-gia-dinh/" class="inline-flex items-center px-4 py-2 bg-brand-red hover:bg-brand-redDark text-white text-xs font-bold uppercase rounded-full shadow transition">
+                Tìm hiểu chi tiết <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Luật sư Doanh nghiệp -->
+      <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 pointer-events-none flex items-end">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/uploads/2024/10/luat-doanh-nghiep-thumb.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 w-full">
+          <div class="max-w-xl bg-white/95 backdrop-blur-md rounded-xl p-6 sm:p-8 shadow-2xl text-navy-900 border-l-4 border-brand-red space-y-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Giải pháp doanh nghiệp</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-navy-900 leading-tight">LUẬT SƯ DOANH NGHIỆP</h2>
+            <p class="text-slate-600 text-sm font-medium leading-relaxed">
+              Kiến tạo giá trị – Kiểm soát rủi ro – Đồng hành phát triển thương mại bền vững.
+            </p>
+            <div class="pt-2">
+              <a href="./luat-doanh-nghiep/" class="inline-flex items-center px-4 py-2 bg-brand-red hover:bg-brand-redDark text-white text-xs font-bold uppercase rounded-full shadow transition">
+                Tìm hiểu chi tiết <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Luật sư Hình sự -->
+      <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 pointer-events-none flex items-end">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/uploads/2024/10/luat-hinh-su-thumb.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 w-full">
+          <div class="max-w-xl bg-white/95 backdrop-blur-md rounded-xl p-6 sm:p-8 shadow-2xl text-navy-900 border-l-4 border-brand-red space-y-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Tranh tụng hình sự</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-navy-900 leading-tight">LUẬT SƯ HÌNH SỰ</h2>
+            <p class="text-slate-600 text-sm font-medium leading-relaxed">
+              Tận tâm với khách hàng – Kiên định cùng công lý – Bảo vệ tối đa quyền con người.
+            </p>
+            <div class="pt-2">
+              <a href="./luat-hinh-su/" class="inline-flex items-center px-4 py-2 bg-brand-red hover:bg-brand-redDark text-white text-xs font-bold uppercase rounded-full shadow transition">
+                Tìm hiểu chi tiết <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Luật sư Nhà đất -->
+      <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 pointer-events-none flex items-end">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/uploads/2024/10/luat-dat-dai-thumb.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 w-full">
+          <div class="max-w-xl bg-white/95 backdrop-blur-md rounded-xl p-6 sm:p-8 shadow-2xl text-navy-900 border-l-4 border-brand-red space-y-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Pháp lý bất động sản</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-navy-900 leading-tight">LUẬT SƯ NHÀ ĐẤT & ĐẤT ĐAI</h2>
+            <p class="text-slate-600 text-sm font-medium leading-relaxed">
+              Đồng hành pháp lý – An tâm giao dịch – Vững bền tài sản qua nhiều thế hệ.
+            </p>
+            <div class="pt-2">
+              <a href="./luat-nha-dat/" class="inline-flex items-center px-4 py-2 bg-brand-red hover:bg-brand-redDark text-white text-xs font-bold uppercase rounded-full shadow transition">
+                Tìm hiểu chi tiết <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Luật Dân sự -->
+      <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 pointer-events-none flex items-end">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/uploads/2024/10/Slider2.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 w-full">
+          <div class="max-w-xl bg-white/95 backdrop-blur-md rounded-xl p-6 sm:p-8 shadow-2xl text-navy-900 border-l-4 border-brand-red space-y-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Tranh tụng dân sự</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-navy-900 leading-tight">LUẬT SƯ DÂN SỰ & HỢP ĐỒNG</h2>
+            <p class="text-slate-600 text-sm font-medium leading-relaxed">
+              Đồng hành giải quyết tranh chấp, bảo vệ quyền và lợi ích hợp pháp chính đáng.
+            </p>
+            <div class="pt-2">
+              <a href="./luat-dan-su/" class="inline-flex items-center px-4 py-2 bg-brand-red hover:bg-brand-redDark text-white text-xs font-bold uppercase rounded-full shadow transition">
+                Tìm hiểu chi tiết <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider Navigation Buttons -->
+    <button id="slider-prev" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-navy-900/70 hover:bg-brand-red text-white flex items-center justify-center border border-white/20 transition backdrop-blur-sm" aria-label="Previous Slide">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button id="slider-next" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-navy-900/70 hover:bg-brand-red text-white flex items-center justify-center border border-white/20 transition backdrop-blur-sm" aria-label="Next Slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Slide Indicators -->
+    <div id="slider-dots" class="absolute bottom-4 right-8 z-20 flex space-x-2"></div>
+  </section>
+
+  <!-- SECTION 1: GIỚI THIỆU VỀ CÔNG TY LUẬT (Khang Vu Layout) -->
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Title & 3 Criteria -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="space-y-1 text-center lg:text-left">
+            <span class="text-xs font-bold uppercase tracking-widest text-slate-500">GIỚI THIỆU VỀ</span>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black uppercase text-navy-900 leading-tight">
+              CÔNG TY LUẬT TNHH MINH ANH VŨ
+            </h2>
+          </div>
+
+          <!-- 3 Core Criteria Icons -->
+          <div class="grid grid-cols-3 gap-4 pt-2">
+            <div class="text-center p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-2 hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-full bg-red-50 text-brand-red flex items-center justify-center mx-auto text-xl shadow-sm">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <h4 class="text-xs font-bold uppercase text-navy-900">Chuyên môn tạo giá trị</h4>
+            </div>
+
+            <div class="text-center p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-2 hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-full bg-red-50 text-brand-red flex items-center justify-center mx-auto text-xl shadow-sm">
+                <i class="fa-solid fa-handshake-simple"></i>
+              </div>
+              <h4 class="text-xs font-bold uppercase text-navy-900">Uy tín tạo niềm tin</h4>
+            </div>
+
+            <div class="text-center p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-2 hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-full bg-red-50 text-brand-red flex items-center justify-center mx-auto text-xl shadow-sm">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <h4 class="text-xs font-bold uppercase text-navy-900">Công lý làm nền tảng</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Featured Image -->
+        <div class="lg:col-span-6">
+          <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-slate-100">
+            <img src="./assets/uploads/2024/10/lich-su-thanh-lap.jpg" alt="Văn phòng Luật sư Minh Anh Vũ" class="w-full h-72 sm:h-80 object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Description Block & Read More -->
+      <div class="mt-8 pt-6 border-t border-slate-200 space-y-4">
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed text-justify">
+          Công ty Luật TNHH Minh Anh Vũ được thành lập và hoạt động theo Giấy đăng ký hoạt động số <strong>79.2026.02.5342/TP/ĐKHĐ</strong> do Sở Tư pháp Thành phố Hồ Chí Minh cấp. Ra đời với khát vọng xây dựng một tổ chức hành nghề luật chuyên nghiệp, tận tâm và uy tín, Công ty Luật TNHH Minh Anh Vũ luôn kiên định với phương châm hoạt động: <strong class="text-brand-red">“Điểm tựa niềm tin – Hiện thân công lý.”</strong>
+        </p>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed text-justify">
+          Chúng tôi tin rằng pháp luật không chỉ là hệ thống các quy phạm điều chỉnh các quan hệ xã hội, mà còn là công cụ bảo vệ công bằng, lẽ phải và quyền lợi hợp pháp của mỗi cá nhân, tổ chức. Với tinh thần đó, Luật Minh Anh Vũ không ngừng nỗ lực trở thành người đồng hành đáng tin cậy của khách hàng trong mọi vấn đề pháp lý.
+        </p>
+        <div class="pt-2">
+          <a href="./gioi-thieu/" class="inline-flex items-center text-sm font-bold text-brand-red hover:text-brand-redDark">
+            Xem thêm <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2: LĨNH VỰC HOẠT ĐỘNG (6 CARDS GRID 3 COLS - KHANG VU STYLE) -->
+  <section class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black uppercase text-navy-900">LĨNH VỰC HOẠT ĐỘNG</h2>
+        <div class="w-16 h-1 bg-brand-red mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Dân sự -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="p-3 bg-white">
+            <div class="border-2 border-navy-900 rounded-lg overflow-hidden h-52">
+              <img src="./assets/uploads/2024/10/luat-lao-dong-thumb.jpg" alt="Luật sư Dân sự" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+          </div>
+          <div class="p-5 bg-slate-50 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-navy-900 text-center uppercase group-hover:text-brand-red transition">LUẬT SƯ DÂN SỰ</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 text-justify leading-relaxed">
+                Luật sư dân sự đóng vai trò quan trọng trong việc tư vấn, bảo vệ quyền và lợi ích hợp pháp của các cá nhân, tổ chức trong các quan hệ dân sự, hợp đồng và bồi thường thiệt hại.
+              </p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="./luat-dan-su/" class="inline-flex items-center px-5 py-2 bg-brand-red hover:bg-navy-900 text-white text-xs font-bold rounded-full shadow transition">
+                Xem thêm <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Hình sự -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="p-3 bg-white">
+            <div class="border-2 border-navy-900 rounded-lg overflow-hidden h-52">
+              <img src="./assets/uploads/2024/10/luat-hinh-su-thumb.jpg" alt="Luật sư Hình sự" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+          </div>
+          <div class="p-5 bg-slate-50 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-navy-900 text-center uppercase group-hover:text-brand-red transition">LUẬT SƯ HÌNH SỰ</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 text-justify leading-relaxed">
+                Bào chữa cho bị can, bị cáo và bảo vệ quyền lợi người bị hại trong suốt quá trình tố tụng từ giai đoạn xác minh, điều tra, truy tố đến xét xử tại Tòa án các cấp.
+              </p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="./luat-hinh-su/" class="inline-flex items-center px-5 py-2 bg-brand-red hover:bg-navy-900 text-white text-xs font-bold rounded-full shadow transition">
+                Xem thêm <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Nhà đất -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="p-3 bg-white">
+            <div class="border-2 border-navy-900 rounded-lg overflow-hidden h-52">
+              <img src="./assets/uploads/2024/10/luat-dat-dai-thumb.jpg" alt="Luật sư Nhà đất" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+          </div>
+          <div class="p-5 bg-slate-50 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-navy-900 text-center uppercase group-hover:text-brand-red transition">LUẬT SƯ NHÀ ĐẤT</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 text-justify leading-relaxed">
+                An toàn pháp lý là nền tảng cho mọi giao dịch nhà đất thành công. Hỗ trợ giải quyết tranh chấp đất đai phức tạp, thừa kế quyền sử dụng đất và cấp sổ đỏ lần đầu.
+              </p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="./luat-nha-dat/" class="inline-flex items-center px-5 py-2 bg-brand-red hover:bg-navy-900 text-white text-xs font-bold rounded-full shadow transition">
+                Xem thêm <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Hôn nhân gia đình -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="p-3 bg-white">
+            <div class="border-2 border-navy-900 rounded-lg overflow-hidden h-52">
+              <img src="./assets/uploads/2024/10/anh-gioi-thieu-01.jpg" alt="Luật sư Hôn nhân gia đình" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+          </div>
+          <div class="p-5 bg-slate-50 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-navy-900 text-center uppercase group-hover:text-brand-red transition">LUẬT SƯ HÔN NHÂN GIA ĐÌNH</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 text-justify leading-relaxed">
+                Tư vấn thủ tục ly hôn nhanh gọn, thỏa thuận phân chia tài sản chung, giải quyết tranh chấp quyền nuôi con, cấp dưỡng và bảo vệ quyền lợi phụ nữ, trẻ em.
+              </p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="./luat-hon-nhan-gia-dinh/" class="inline-flex items-center px-5 py-2 bg-brand-red hover:bg-navy-900 text-white text-xs font-bold rounded-full shadow transition">
+                Xem thêm <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Lao động -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="p-3 bg-white">
+            <div class="border-2 border-navy-900 rounded-lg overflow-hidden h-52">
+              <img src="./assets/uploads/2024/10/anh-gioi-thieu-00.jpg" alt="Luật sư Lao động" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+          </div>
+          <div class="p-5 bg-slate-50 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-navy-900 text-center uppercase group-hover:text-brand-red transition">LUẬT SƯ LAO ĐỘNG</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 text-justify leading-relaxed">
+                Đồng hành cùng người lao động và doanh nghiệp trong việc xây dựng nội quy lao động, giải quyết tranh chấp hợp đồng, sa thải trái luật và bồi thường tai nạn lao động.
+              </p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="./luat-lao-dong/" class="inline-flex items-center px-5 py-2 bg-brand-red hover:bg-navy-900 text-white text-xs font-bold rounded-full shadow transition">
+                Xem thêm <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Doanh nghiệp -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="p-3 bg-white">
+            <div class="border-2 border-navy-900 rounded-lg overflow-hidden h-52">
+              <img src="./assets/uploads/2024/10/luat-doanh-nghiep-thumb.jpg" alt="Luật sư Doanh nghiệp" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+          </div>
+          <div class="p-5 bg-slate-50 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-navy-900 text-center uppercase group-hover:text-brand-red transition">LUẬT SƯ DOANH NGHIỆP</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 text-justify leading-relaxed">
+                Tư vấn thành lập, M&A, rà soát hợp đồng thương mại, xây dựng cơ chế quản trị nội bộ và đại diện doanh nghiệp giải quyết các tranh chấp kinh doanh.
+              </p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="./luat-doanh-nghiep/" class="inline-flex items-center px-5 py-2 bg-brand-red hover:bg-navy-900 text-white text-xs font-bold rounded-full shadow transition">
+                Xem thêm <i class="fa-solid fa-arrow-right-long ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: TẠI SAO CHỌN LUẬT MINH ANH VŨ? (4 PILLARS ON NAVY BACKGROUND) -->
+  <section class="py-16 sm:py-20 bg-navy-900 text-white border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black uppercase text-white">TẠI SAO CHỌN LUẬT MINH ANH VŨ?</h2>
+        <div class="w-16 h-1 bg-brand-red mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="text-center p-6 rounded-2xl bg-navy-950/80 border border-navy-800 space-y-3 hover:border-brand-red transition">
+          <div class="w-16 h-16 rounded-full bg-brand-red flex items-center justify-center mx-auto text-2xl shadow-lg shadow-red-600/30">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-base font-bold text-white uppercase">Uy tín và trách nhiệm</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Kiên định với các chuẩn mực đạo đức nghề nghiệp, bảo vệ quyền lợi khách hàng bằng sự chính trực, trách nhiệm và bản lĩnh của người luật sư.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="text-center p-6 rounded-2xl bg-navy-950/80 border border-navy-800 space-y-3 hover:border-brand-red transition">
+          <div class="w-16 h-16 rounded-full bg-brand-red flex items-center justify-center mx-auto text-2xl shadow-lg shadow-red-600/30">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="text-base font-bold text-white uppercase">Chuyên môn sâu rộng</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Cung cấp các giải pháp pháp lý chính xác, hiệu quả và phù hợp trên nền tảng kiến thức chuyên sâu và kinh nghiệm thực tiễn phong phú.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="text-center p-6 rounded-2xl bg-navy-950/80 border border-navy-800 space-y-3 hover:border-brand-red transition">
+          <div class="w-16 h-16 rounded-full bg-brand-red flex items-center justify-center mx-auto text-2xl shadow-lg shadow-red-600/30">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3 class="text-base font-bold text-white uppercase">Dịch vụ toàn diện</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Tư vấn, đại diện và bảo vệ quyền lợi khách hàng trong nhiều lĩnh vực pháp luật, đáp ứng trọn gói mọi nhu cầu pháp lý của cá nhân & doanh nghiệp.
+          </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="text-center p-6 rounded-2xl bg-navy-950/80 border border-navy-800 space-y-3 hover:border-brand-red transition">
+          <div class="w-16 h-16 rounded-full bg-brand-red flex items-center justify-center mx-auto text-2xl shadow-lg shadow-red-600/30">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3 class="text-base font-bold text-white uppercase">Lấy khách hàng làm trung tâm</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Mọi giải pháp pháp lý đều được xây dựng trên cơ sở thấu hiểu nhu cầu và bảo vệ tốt nhất quyền, lợi ích hợp pháp của khách hàng.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: HỎI ĐÁP PHÁP LUẬT & FORM ĐĂNG KÝ (KHANG VU STYLE) -->
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-50 rounded-2xl p-8 sm:p-12 shadow-lg border border-slate-200">
+        
+        <div class="text-center space-y-3 mb-8">
+          <h2 class="text-2xl sm:text-3xl font-black uppercase text-navy-900">HỎI ĐÁP PHÁP LUẬT</h2>
+          <p class="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            Hãy gửi các vướng mắc pháp lý bạn đang gặp phải đến Luật Minh Anh Vũ. Chúng tôi sẽ phản hồi trong thời gian sớm nhất. Trong trường hợp khẩn cấp hãy gọi trực tiếp qua Hotline: <strong class="text-brand-red font-bold">0901.234.567</strong> (Giám đốc - Luật sư Nguyễn Văn An).
+          </p>
+        </div>
+
+        <form class="consultation-form space-y-4" data-ajax-form="true">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <input type="text" required placeholder="Họ & tên *" class="w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none bg-white font-medium" />
+            </div>
+            <div>
+              <input type="email" required placeholder="Địa chỉ email *" class="w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none bg-white font-medium" />
+            </div>
+            <div>
+              <input type="tel" required placeholder="Số điện thoại *" class="w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none bg-white font-medium" />
+            </div>
+          </div>
+
+          <div>
+            <textarea rows="4" required placeholder="Nội dung vướng mắc cần tư vấn chi tiết..." class="w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none bg-white font-medium"></textarea>
+          </div>
+
+          <div class="text-center pt-2">
+            <button type="submit" class="px-8 py-3.5 bg-brand-red hover:bg-brand-redDark text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md shadow-red-600/30 transition">
+              Gửi đến Luật Minh Anh Vũ
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: ĐỐI TÁC TIN CẬY -->
+  <section class="py-12 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="text-xl sm:text-2xl font-black uppercase text-navy-900">ĐỐI TÁC TIN CẬY</h2>
+      </div>
+      <div class="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center justify-items-center opacity-80 hover:opacity-100 transition duration-300">
+        <img src="./assets/uploads/2024/10/logo-01.png" alt="Đối tác 1" class="h-10 object-contain grayscale hover:grayscale-0 transition" />
+        <img src="./assets/uploads/2024/10/logo-02.png" alt="Đối tác 2" class="h-10 object-contain grayscale hover:grayscale-0 transition" />
+        <img src="./assets/uploads/2024/10/logo-03.png" alt="Đối tác 3" class="h-10 object-contain grayscale hover:grayscale-0 transition" />
+        <img src="./assets/uploads/2024/10/logo-04.png" alt="Đối tác 4" class="h-10 object-contain grayscale hover:grayscale-0 transition" />
+        <img src="./assets/uploads/2024/10/logo-05.png" alt="Đối tác 5" class="h-10 object-contain grayscale hover:grayscale-0 transition" />
+        <img src="./assets/uploads/2024/10/logo-06.png" alt="Đối tác 6" class="h-10 object-contain grayscale hover:grayscale-0 transition" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: HIỆP HỘI & CƠ QUAN TƯ PHÁP -->
+  <section class="py-12 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="text-xl sm:text-2xl font-black uppercase text-navy-900">HIỆP HỘI & TỔ CHỨC NGHỀ NGHIỆP</h2>
+      </div>
+      <div class="flex flex-wrap justify-center items-center gap-10 opacity-75">
+        <div class="flex items-center gap-2 font-bold text-slate-700 text-sm">
+          <i class="fa-solid fa-landmark text-brand-red text-xl"></i>
+          <span>LIÊN ĐOÀN LUẬT SƯ VIỆT NAM</span>
+        </div>
+        <div class="flex items-center gap-2 font-bold text-slate-700 text-sm">
+          <i class="fa-solid fa-building-columns text-brand-red text-xl"></i>
+          <span>ĐOÀN LUẬT SƯ THÀNH PHỐ HỒ CHÍ MINH</span>
+        </div>
+        <div class="flex items-center gap-2 font-bold text-slate-700 text-sm">
+          <i class="fa-solid fa-scale-balanced text-brand-red text-xl"></i>
+          <span>HIỆP HỘI PHÁP LUẬT ĐẤT ĐAI & DOANH NGHIỆP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section (4 Columns Structure Matching Khang Vu) -->
+  <footer class="bg-navy-950 text-slate-300 mt-auto border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        <!-- Col 1: Legal Entity Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="bg-brand-red text-white p-2 rounded-lg">
+              <i class="fa-solid fa-scale-balanced text-xl"></i>
+            </div>
+            <span class="text-lg font-bold tracking-wider text-white uppercase">MINH ANH VŨ</span>
+          </div>
+          <div class="text-xs text-slate-400 space-y-2 leading-relaxed">
+            <p><strong class="text-white">CÔNG TY LUẬT TNHH MINH ANH VŨ</strong></p>
+            <p>Giấy ĐKHĐ số: <strong class="text-slate-300">79.2026.02.5342/TP/ĐKHĐ</strong> do Sở Tư pháp TP.HCM cấp.</p>
+            <p class="font-accent text-base text-brand-red">"Điểm tựa niềm tin – Hiện thân công lý"</p>
+          </div>
+          <div class="flex space-x-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-youtube text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-navy-900 hover:bg-brand-red hover:text-white flex items-center justify-center transition border border-navy-800"><i class="fa-brands fa-tiktok text-sm"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Practice Areas Links -->
+        <div>
+          <h3 class="text-white font-bold text-base uppercase tracking-wider mb-4 border-l-4 border-brand-red pl-3">Lĩnh vực hoạt động</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="./luat-dan-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Dân sự</a></li>
+            <li><a href="./luat-hinh-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hình sự</a></li>
+            <li><a href="./luat-nha-dat/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Nhà đất</a></li>
+            <li><a href="./luat-hon-nhan-gia-dinh/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Hôn nhân & Gia đình</a></li>
+            <li><a href="./luat-lao-dong/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Lao động</a></li>
+            <li><a href="./luat-doanh-nghiep/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-brand-red"></i> Luật sư Doanh nghiệp</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div>
+          <h3 class="text-white font-bold text-base uppercase tracking-wider mb-4 border-l-4 border-brand-red pl-3">Hỏi đáp & Nghiên cứu</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="./gioi-thieu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Giới thiệu chung</a></li>
+            <li><a href="./luat-su/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Đội ngũ Luật sư</a></li>
+            <li><a href="./tin-tuc/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Hỏi đáp - Pháp luật</a></li>
+            <li><a href="./hoc-tap-nghien-cuu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Tài liệu nghiệp vụ luật sư</a></li>
+            <li><a href="./hoc-tap-nghien-cuu/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Tài liệu cử nhân luật</a></li>
+            <li><a href="./lien-he/" class="hover:text-brand-red transition flex items-center"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-slate-500"></i> Liên hệ tư vấn</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info & Headquarters -->
+        <div>
+          <h3 class="text-white font-bold text-base uppercase tracking-wider mb-4 border-l-4 border-brand-red pl-3">Trụ sở chính</h3>
+          <ul class="space-y-2.5 text-xs">
+            <li class="flex items-start">
+              <i class="fa-solid fa-location-dot text-brand-red mt-0.5 mr-2.5 flex-shrink-0"></i>
+              <span>Tầng 3, Tòa nhà Innovation, CVPM Quang Trung, P. Tân Chánh Hiệp, Quận 12, TP.HCM</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-phone text-brand-red mr-2.5 flex-shrink-0"></i>
+              <span>Tel: <a href="tel:02873007788" class="text-slate-300 hover:text-white">028.7300.7788</a> - Hotline: <a href="tel:0901234567" class="text-brand-red font-bold">0901.234.567</a></span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-envelope text-brand-red mr-2.5 flex-shrink-0"></i>
+              <span>contact@minhanhvulaw.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-globe text-brand-red mr-2.5 flex-shrink-0"></i>
+              <span>www.minhanhvulaw.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright Bottom -->
+      <div class="mt-12 pt-8 border-t border-navy-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
+        <p>© 2026 CÔNG TY LUẬT TNHH MINH ANH VŨ. Điểm tựa niềm tin – Hiện thân công lý.</p>
+        <p class="flex items-center gap-1">Thiết kế & Vận hành bởi <span class="text-brand-red font-semibold">Mắt Bão WS</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Call & Back To Top -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-center gap-3">
+    <a href="tel:0901234567" class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shadow-lg hover:bg-brand-redDark hover:scale-110 transition duration-300 animate-bounce" title="Gọi ngay cho Luật sư">
+      <i class="fa-solid fa-phone text-lg"></i>
+    </a>
+    <button id="back-to-top" class="w-11 h-11 rounded-full bg-navy-900 border border-navy-800 text-white opacity-0 pointer-events-none hover:bg-brand-red hover:border-brand-red flex items-center justify-center shadow-md transition duration-300" title="Về đầu trang">
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
