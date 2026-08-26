@@ -141,13 +141,13 @@
   <!-- Main Navigation Bar (Synchronized Font Size text-base / font-semibold) -->
   <nav class="sticky top-0 z-50 bg-navy-900 text-white shadow-xl hidden lg:block border-t border-navy-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <ul class="flex items-center justify-center space-x-2 text-base uppercase tracking-wide py-1">
+      <ul class="flex items-center justify-center space-x-2 text-base uppercase tracking-wide py-1 font-semibold">
         
         <!-- 1. Trang chủ -->
         <li class="relative">
           <a href="../../" class="px-4 py-3.5 block text-white hover:text-brand-red font-semibold transition">Trang chủ</a>
         </li>
-        <li class="text-slate-600 select-none">|</li>
+        <li class="text-slate-600 select-none font-normal">|</li>
 
         <!-- 2. Giới thiệu (Dropdown) -->
         <li class="relative nav-item-dropdown group">
@@ -156,39 +156,29 @@
             <i class="fa-solid fa-angle-down text-xs opacity-75 group-hover:rotate-180 transition-transform duration-200"></i>
           </a>
           <div class="dropdown-menu hidden absolute top-full left-0 pt-2 z-50 animate-fadeIn">
-            <ul class="w-80 bg-white rounded-2xl shadow-2xl shadow-navy-950/20 border border-slate-100 p-2 text-sm normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
+            <ul class="w-72 bg-white rounded-xl shadow-2xl border border-slate-200 border-t-4 border-t-brand-red py-2 text-base normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
               <li>
-                <a href="../../gioi-thieu/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-building-columns"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Giới thiệu chung</span>
-                      <span class="text-xs text-slate-400 font-normal block">Tầm nhìn, sứ mệnh & giá trị cốt lõi</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../gioi-thieu/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Giới thiệu chung
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../luat-su/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Đội ngũ nhân sự / Luật sư</span>
-                      <span class="text-xs text-slate-400 font-normal block">Luật sư điều hành & chuyên gia</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../luat-su/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Đội ngũ nhân sự / Luật sư
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="text-slate-600 select-none">|</li>
+        <li class="text-slate-600 select-none font-normal">|</li>
 
         <!-- 3. Lĩnh vực hoạt động (Dropdown 6 services) -->
         <li class="relative nav-item-dropdown group">
@@ -197,95 +187,65 @@
             <i class="fa-solid fa-angle-down text-xs opacity-75 group-hover:rotate-180 transition-transform duration-200"></i>
           </a>
           <div class="dropdown-menu hidden absolute top-full left-0 pt-2 z-50 animate-fadeIn">
-            <ul class="w-88 bg-white rounded-2xl shadow-2xl shadow-navy-950/20 border border-slate-100 p-2 text-sm normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
+            <ul class="w-80 bg-white rounded-xl shadow-2xl border border-slate-200 border-t-4 border-t-brand-red py-2 text-base normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
               <li>
-                <a href="../../luat-dan-su/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-handshake"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Luật sư Dân sự</span>
-                      <span class="text-xs text-slate-400 font-normal block">Hợp đồng, thừa kế & tài sản</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../luat-dan-su/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Luật sư Dân sự
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../luat-hinh-su/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-gavel"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Luật sư Hình sự</span>
-                      <span class="text-xs text-slate-400 font-normal block">Bào chữa & bảo vệ đương sự tại Tòa</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../luat-hinh-su/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Luật sư Hình sự
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../luat-nha-dat/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-house-chimney"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Luật sư Nhà đất & Đất đai</span>
-                      <span class="text-xs text-slate-400 font-normal block">Cấp sổ đỏ, ranh giới & tranh chấp</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../luat-nha-dat/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Luật sư Nhà đất & Đất đai
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../luat-hon-nhan-gia-dinh/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-heart-circle-check"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Luật sư Hôn nhân & Gia đình</span>
-                      <span class="text-xs text-slate-400 font-normal block">Ly hôn, phân chia tài sản & con cái</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../luat-hon-nhan-gia-dinh/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Luật sư Hôn nhân & Gia đình
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../luat-lao-dong/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-briefcase"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Luật sư Lao động</span>
-                      <span class="text-xs text-slate-400 font-normal block">Hợp đồng, sa thải & tiền lương</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../luat-lao-dong/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Luật sư Lao động
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../luat-doanh-nghiep/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Luật sư Doanh nghiệp</span>
-                      <span class="text-xs text-slate-400 font-normal block">Thành lập, M&A & hợp đồng thương mại</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../luat-doanh-nghiep/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Luật sư Doanh nghiệp
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="text-slate-600 select-none">|</li>
+        <li class="text-slate-600 select-none font-normal">|</li>
 
         <!-- 4. Hỏi đáp - Pháp luật (Dropdown) -->
         <li class="relative nav-item-dropdown group">
@@ -294,53 +254,38 @@
             <i class="fa-solid fa-angle-down text-xs opacity-75 group-hover:rotate-180 transition-transform duration-200"></i>
           </a>
           <div class="dropdown-menu hidden absolute top-full left-0 pt-2 z-50 animate-fadeIn">
-            <ul class="w-88 bg-white rounded-2xl shadow-2xl shadow-navy-950/20 border border-slate-100 p-2 text-sm normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
+            <ul class="w-80 bg-white rounded-xl shadow-2xl border border-slate-200 border-t-4 border-t-brand-red py-2 text-base normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
               <li>
-                <a href="../../tin-tuc/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-newspaper"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Tất cả Hỏi đáp & Án lệ</span>
-                      <span class="text-xs text-slate-400 font-normal block">Cập nhật tin tức & kiến thức mới</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../tin-tuc/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Tất cả Hỏi đáp & Án lệ
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../tag/luat-gia-dinh/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-people-roof"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Chủ đề: Hôn nhân & Gia đình</span>
-                      <span class="text-xs text-slate-400 font-normal block">Hỏi đáp & quy định luật gia đình</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../tag/luat-gia-dinh/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Hôn nhân & Gia đình
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../tag/luat-hinh-su/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Chủ đề: Hình sự & Bào chữa</span>
-                      <span class="text-xs text-slate-400 font-normal block">Phân tích vụ án & quyền tố tụng</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../tag/luat-hinh-su/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Hình sự & Bào chữa
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="text-slate-600 select-none">|</li>
+        <li class="text-slate-600 select-none font-normal">|</li>
 
         <!-- 5. Học tập - Nghiên cứu -->
         <li class="relative nav-item-dropdown group">
@@ -349,39 +294,29 @@
             <i class="fa-solid fa-angle-down text-xs opacity-75 group-hover:rotate-180 transition-transform duration-200"></i>
           </a>
           <div class="dropdown-menu hidden absolute top-full left-0 pt-2 z-50 animate-fadeIn">
-            <ul class="w-84 bg-white rounded-2xl shadow-2xl shadow-navy-950/20 border border-slate-100 p-2 text-sm normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
+            <ul class="w-76 bg-white rounded-xl shadow-2xl border border-slate-200 border-t-4 border-t-brand-red py-2 text-base normal-case font-medium ring-1 ring-black/5 divide-y divide-slate-100">
               <li>
-                <a href="../../hoc-tap-nghien-cuu/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-book-bookmark"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Tài liệu nghiệp vụ luật sư</span>
-                      <span class="text-xs text-slate-400 font-normal block">Kỹ năng tranh tụng & biểu mẫu</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../hoc-tap-nghien-cuu/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Tài liệu nghiệp vụ luật sư
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
               <li>
-                <a href="../../hoc-tap-nghien-cuu/" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition duration-200 group/item">
-                  <div class="flex items-center gap-3.5">
-                    <div class="w-9 h-9 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-sm group-hover/item:bg-brand-red group-hover/item:text-white transition duration-200 shadow-sm">
-                      <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <div>
-                      <span class="font-bold text-slate-800 group-hover/item:text-brand-red transition block text-sm">Tài liệu cử nhân luật</span>
-                      <span class="text-xs text-slate-400 font-normal block">Học liệu bồi dưỡng & nghiên cứu</span>
-                    </div>
-                  </div>
-                  <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover/item:text-brand-red group-hover/item:translate-x-1 transition duration-200"></i>
+                <a href="../../hoc-tap-nghien-cuu/" class="flex items-center justify-between px-5 py-3.5 text-slate-800 hover:text-brand-red hover:bg-slate-50 transition duration-150 group/link">
+                  <span class="flex items-center gap-2 group-hover/link:translate-x-1.5 transition-transform duration-200 whitespace-nowrap">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity"></span>
+                    Tài liệu cử nhân luật
+                  </span>
+                  <i class="fa-solid fa-angle-right text-xs text-slate-300 group-hover/link:text-brand-red transition duration-150"></i>
                 </a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="text-slate-600 select-none">|</li>
+        <li class="text-slate-600 select-none font-normal">|</li>
 
         <!-- 6. Liên hệ -->
         <li class="relative">
